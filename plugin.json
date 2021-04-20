@@ -1,0 +1,38 @@
+{
+	"pluginName": "剪贴板(本地版)",
+	"description": "一个电脑重启剪贴板不清除记录的插件",
+	"author": "hy",
+	"main": "index.html",
+	"preload": "preload.js",
+	"version": "0.0.1",
+	"logo": "logo.png",
+	"features": [
+		{
+			"code": "input",
+			"explain": "本地剪切板",
+			"cmds": [
+				"剪贴板",
+				"剪切板",
+				"qj",
+				"tt"
+			]
+		},
+		{
+			"code": "ipt",
+			"explain": "保存至剪贴板",
+			"cmds": [
+				{
+					"type": "regex",
+					"label": "文本正则匹配",
+					"match": "/xxx/i",
+					"minLength": 1,
+					"maxLength": 1
+				},
+				{
+					"type": "img",
+					"label": "图片匹配"
+				}
+			]
+		}
+	]
+}
