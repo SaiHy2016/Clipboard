@@ -16,8 +16,15 @@
 
 <body>
     <ul id='Clipboard'>
-        <li>123</li>
+        <li>123123</li>
     </ul>
 </body>
+<script>
+    var cli = document.getElementById('Clipboard');
+    var lis = ``;
+    var clipboardData = window.clipboardData;
+    
+    cli.innerHTML = clipboardData;
+</script>
 
 </html>
